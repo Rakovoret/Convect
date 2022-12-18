@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shorcut icon" type="x-icon" href="Images/icon.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo">Convect</a>
+        <ul>
+            <li> <a href="#" class="active">Home</a> </li>
+            <li> <a href="#About">About</a></li>
+            <li><a href="https://discord.gg/zW45zM9YUw">Discord</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src='Images/stars.png' id="stars">
+        <img src='Images/moon.png' id="moon">
+        <img src='Images/mountains_behind.png' id="mountains_behind">
+        <h2 id="text"> Moon Light </h2>
+        <a href="#sec" id="btn" >More</a>
+        <img src='Images/mountains_front.png' id="mountains_front">
+    </section>
+    <div class="sec" id="sec" >
+        <h2>How it was created</h2>
+        <p>The effect you are seeing is called paralac effect.looks cool right? i know it took me soo long but the time is well spend . it looks fabulous . about how i created is with html and css no java i learned it advanced from code with harry both css and html then with some reasearch this is the product i hope you like it :). this was my biggest project and it looks the best out of all (btw this is my first website lmao). you wont be seeing any more updates all the updates will be done by other group members i will be sleeping and relaxing in my bed good bye! and yeah it is me Rakshit talking to you i am a 7th grade student studying at army public school mhow . and yeah i created this awesome website . </p>
+    </div>
+    <div class="about" id="About"><p><h2 id="About">About</h2>
+        I, Aadityaveer am Rakshit's(founder of Convect) school friend.<br>
+        we decided to design this website when our computer teacher was teaching us about HTML5.<br>
+        We then decided that we should make a website to show our teacher that we have mastered HTML5 and we can make anything we want.<br>
+        So thats it, thats the reason we made this website.Our group worked for hours on daily basis to make this masterpiece,
+         i think our hardwork payed-off.<br>
+         We were think that once we show our teacher this website, we will use it as a commercial website for whatever product or any type of website we need to.<br>
+         But we need to think before we do something so, Stay tuned for updates on Our Website CONVECT.<br>
+                                                                                               <br>
+                                                                                              <br>
+       <div class="thanks-text"><h2>THANKS FOR VISITING</h2></div>
+    </p></div>
+    
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value + 0.25 + 'px';
+            moon.style.top = value + 1.05 + 'px';
+            mountains_behind.style.top = value + 0.05 + 'px';
+        })
+    </script>
+</body>
+</html>
